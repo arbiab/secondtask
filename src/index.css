@@ -1,0 +1,156 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100rem;
+ margin: auto;
+ gap: 2rem;
+  flex-direction: row;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  padding: 0px 30px;
+  border-radius: 30px;
+  border: 1px solid rgb(216, 210, 210);
+}
+
+.wrapper p {
+  white-space: pre-line;
+  margin-bottom: 90px;
+  width: 100%;
+}
+
+
+.name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#new-btn{
+  background-color: green;
+  color: white;
+  min-width: 90px;
+ text-align: center;
+ padding: 9px;
+ border-radius: 6px;
+ margin-right: 30px;
+ border: none;
+}
+#fix-btn{
+  background-color: blue;
+  color: white;
+  min-width: 90px;
+ text-align: center;
+ padding: 9px;
+ border-radius: 6px;
+ margin-right: 30px;
+ border: none;
+}
+#improvment-btn{
+  background-color: purple;
+  color: white;
+  min-width: 140px;
+ text-align: center;
+ padding: 9px;
+ border-radius: 6px;
+ margin-right:30px;
+ border: none;
+}
+.name-wrapper img {
+  width: 20px;
+  height: 23px;
+  border-radius: 30px;
+ 
+}
+.name-wrapper h2 {
+  font-size: 23px;
+}
+
+
+.wrapper button {
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  min-width: 10rem;
+  color: rgb(46, 142, 184);
+  border-color: rgb(46, 142, 184);
+  box-shadow: none;
+  cursor: pointer;
+}
+@media (max-width:400px) {
+  .wrapper h2 {
+    font-size: 18px;
+  }
+  #improvment-btn {
+    min-width: 100px;
+  }
+}
+@media (max-width: 350px) {
+  .wrapper {
+    align-items: center;
+    padding: 15px;
+    height: auto;
+  
+  }
+  
+  h2 {
+    font-size: 15px;
+  }
+
+  .name-wrapper {
+    flex-direction: column;
+    gap: 0.5rem; 
+    justify-content: center;
+  }
+
+  #new-btn,#fix-btn , #improvment-btn {
+    width: 100%; 
+    margin-right: 0;
+    min-width: auto;
+    padding: 10px; 
+  }
+
+  .wrapper p {
+    font-size: 14px;
+  }
+
+  .wrapper button {
+    font-size: 12px; 
+    width: 100%; 
+    min-width: auto; 
+  }
+}
+
+@media (max-width: 120px) {
+  .wrapper {
+    padding: 10px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  .name-wrapper {
+    gap: 0.5rem;
+  }
+  #new-btn,#fix-btn , #improvment-btn {
+    font-size: 8px;
+    width: 60%;
+    min-width: 40px;
+    margin-right: 0;
+    padding: 5px;
+  }
+  .wrapper p {
+    font-size: 8px;
+  }
+  .wrapper button {
+    font-size: 8px;
+    width: 60%;
+    min-width: 40px;
+    padding: 5px;
+  }
+}
